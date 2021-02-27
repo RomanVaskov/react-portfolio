@@ -1,5 +1,6 @@
 import React from "react";
 import { About, Description, Hide, Image } from "../styles";
+import Wave from "./Wave";
 
 // Import Framer Motion
 import { motion } from "framer-motion";
@@ -33,6 +34,7 @@ const AboutSection = () => {
       <Image>
         <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
       </Image>
+      <Wave />
     </About>
   );
 };
