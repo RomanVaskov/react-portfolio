@@ -14,6 +14,10 @@ const MovieDetail = () => {
   const [movie, setMovie] = React.useState(null);
 
   React.useEffect(() => {
+    setMovies(MovieState);
+  }, []);
+
+  React.useEffect(() => {
     const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
     setMovie(currentMovie[0]);
   }, [movies, url]);
